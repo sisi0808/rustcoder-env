@@ -52,6 +52,16 @@ macro_rules! rep {
     };
 }
 
+macro_rules! yn {
+    ($val:expr) => {
+        if $val {
+            println!("Yes");
+        } else {
+            println!("No");
+        }
+    };
+}
+
 macro_rules! max {
     ($x: expr) => ($x);
     ($x: expr, $($z: expr),+) => {{
