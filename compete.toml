@@ -29,6 +29,16 @@ use std::cmp::*;
 
 #[allow(dead_code)]
 const MOD: usize = 1_000_000_000 + 7;
+const D: [(isize, isize); 8] = [
+    (0, -1),
+    (1, -1),
+    (1, 0),
+    (1, 1),
+    (0, 1),
+    (-1, 1),
+    (-1, 0),
+    (-1, -1),
+];
 
 macro_rules! rep {
     ($n: expr, $body: block) => {
