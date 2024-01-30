@@ -1,5 +1,6 @@
 #![allow(unused_macros)]
 use std::collections::*;
+use libm::floor;
 use proconio::*;
 use std::cmp::*;
 
@@ -76,4 +77,10 @@ macro_rules! min {
 }
 
 fn main() {
+    input!{
+        a: i128,
+        b: f32,
+    };
+    let ans = a * (b * 100.0).round() as i128 / 100;
+    println!("{ans}");
 }
