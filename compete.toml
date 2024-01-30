@@ -28,6 +28,7 @@ use proconio::*;
 use std::cmp::*;
 
 #[allow(dead_code)]
+const INF: usize = 1_000_000_000_000_000_000;
 const MOD: usize = 1_000_000_000 + 7;
 const D: [(isize, isize); 8] = [
     (0, -1),
